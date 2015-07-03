@@ -1,0 +1,76 @@
+@import 'sitetheme';
+@import 'global_styles';
+@import 'utils';
+@import 'custom_bootstrap';
+
+// TOPBAR [ ** Topmost empty darkblue bar]
+
+.top-bar{
+    background-color:$dark_blue;
+    height:10px;
+}
+
+// HEADER LINKS/LOGIN HEADER/LOGIN CONTENT SECTION [ SeoDigest, Blog, Reviews, Register, Login Buttons, Language dropdown ]
+
+.header-links{
+    background-image: linear-gradient(to bottom, $light_blue 0, $light_blue 100%);
+}
+
+.login-header{
+    background-color: $dark_blue;
+    height:40px;
+    border: 2px solid $dark_blue;
+    border-bottom-left-radius:7px !important;
+    border-bottom-right-radius:7px !important;
+
+    .login-content{
+      color:#8db2ce; /* TODO : Should have been $light_blue. somehow in image its even more lighter*/
+      font-size:13px;
+      vertical-align: middle;
+      ul {
+        padding-left: 0px !important;
+      }
+    }
+
+    li{
+      display:inline-block;
+    }
+    .btn-register{
+      background-color:$tango_orange;
+      color:#FFF;
+      font-size:11px;
+      padding: 4px 6px 4px 6px;
+    }
+
+    .btn-login{
+      background-color:#01416b;
+      color:#FFF;
+      font-size:11px;
+      padding: 4px 6px 4px 6px;
+    }
+
+    .btn-lang{
+      background-color:#FFF;
+      font-size:11px;
+      padding:3px 3px 3px 7px !important;
+
+    }
+
+    .txt-bold{
+      font-weight: bold;
+    }
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin border-radius-left($radius) {
+  -webkit-border-bottom-left-radius: $radius;
+  -moz-border-radius-bottomleft: $radius;
+  border-bottom-left-radius: $radius;
+}
+
+

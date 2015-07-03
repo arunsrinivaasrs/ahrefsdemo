@@ -1,0 +1,42 @@
+/*** -- OVERRIDING TWITTER BOOTSTRAP CSS BEGINS **/
+
+.navbar{
+  padding-top:20px;
+  margin-bottom:0px;
+  background-color: #3375a4;
+  border-style:none;
+
+  .logo{
+    /*position:absolute;
+    bottom:15px;*/
+    padding-top:10px;
+    horiz-align: right;
+
+    img{
+      margin-right:5px;
+    }
+  }
+}
+.nav{
+  li {
+    background-color: #4a83ae;
+    margin-right: 8px;
+    margin-top: 2px;
+    .selected {
+      background-color:#9ac5e6;
+    }
+  }
+}
+
+.navbar-inverse {
+  background-image: linear-gradient(to bottom, #367bad 0, #367bad 100%);
+
+  .navbar-nav>li>a {
+    color:#FFFFFF;
+  }
+}
+
+.dropdown-menu li{
+  display:block !important;
+}
+/*** -- OVERRIDING TWITTER BOOTSTRAP CSS ENDS **/
