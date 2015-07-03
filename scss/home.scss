@@ -24,40 +24,46 @@
     border-bottom-right-radius:7px !important;
 
     .login-content{
-      color:#8db2ce; /* TODO : Should have been $light_blue. somehow in image its even more lighter*/
+      color:#FFF; /* TODO : Should have been $light_blue. somehow in image its even more lighter*/
       font-size:13px;
       vertical-align: middle;
       ul {
         padding-left: 0px !important;
       }
-    }
+      li{
+        display:inline-block;
+      }
+      li a{
+        color:#FFF !important;
+      }
+      li a:hover{
+        color: $light_blue !important;
+        text-decoration:none;
+      }
+      .btn-register{
+        background-color:$tango_orange;
+        color:#FFF;
+        font-size:11px;
+        padding: 4px 6px 4px 6px;
+      }
 
-    li{
-      display:inline-block;
-    }
-    .btn-register{
-      background-color:$tango_orange;
-      color:#FFF;
-      font-size:11px;
-      padding: 4px 6px 4px 6px;
-    }
+      .btn-login{
+        background-color:#01416b;
+        color:#FFF;
+        font-size:11px;
+        padding: 4px 6px 4px 6px;
+      }
 
-    .btn-login{
-      background-color:#01416b;
-      color:#FFF;
-      font-size:11px;
-      padding: 4px 6px 4px 6px;
-    }
+      .btn-lang{
+        background-color:#FFF;
+        font-size:11px;
+        padding:3px 3px 3px 7px !important;
+        color:#000;
+      }
 
-    .btn-lang{
-      background-color:#FFF;
-      font-size:11px;
-      padding:3px 3px 3px 7px !important;
-
-    }
-
-    .txt-bold{
-      font-weight: bold;
+      .txt-bold{
+        font-weight: bold;
+      }
     }
 }
 @mixin border-radius($radius) {

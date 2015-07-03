@@ -51,6 +51,8 @@ ol, ul {
   margin-top: 2px; }
   .nav li .selected {
     background-color: #9ac5e6; }
+.nav li:hover {
+  background-color: #5c93bd; }
 
 .navbar-inverse {
   background-image: linear-gradient(to bottom, #367bad 0, #367bad 100%); }
@@ -75,29 +77,35 @@ ol, ul {
   border-bottom-left-radius: 7px !important;
   border-bottom-right-radius: 7px !important; }
   .login-header .login-content {
-    color: #8db2ce;
+    color: #FFF;
     /* TODO : Should have been $light_blue. somehow in image its even more lighter*/
     font-size: 13px;
     vertical-align: middle; }
     .login-header .login-content ul {
       padding-left: 0px !important; }
-  .login-header li {
-    display: inline-block; }
-  .login-header .btn-register {
-    background-color: #fe820e;
-    color: #FFF;
-    font-size: 11px;
-    padding: 4px 6px 4px 6px; }
-  .login-header .btn-login {
-    background-color: #01416b;
-    color: #FFF;
-    font-size: 11px;
-    padding: 4px 6px 4px 6px; }
-  .login-header .btn-lang {
-    background-color: #FFF;
-    font-size: 11px;
-    padding: 3px 3px 3px 7px !important; }
-  .login-header .txt-bold {
-    font-weight: bold; }
+    .login-header .login-content li {
+      display: inline-block; }
+    .login-header .login-content li a {
+      color: #FFF !important; }
+    .login-header .login-content li a:hover {
+      color: #367bad !important;
+      text-decoration: none; }
+    .login-header .login-content .btn-register {
+      background-color: #fe820e;
+      color: #FFF;
+      font-size: 11px;
+      padding: 4px 6px 4px 6px; }
+    .login-header .login-content .btn-login {
+      background-color: #01416b;
+      color: #FFF;
+      font-size: 11px;
+      padding: 4px 6px 4px 6px; }
+    .login-header .login-content .btn-lang {
+      background-color: #FFF;
+      font-size: 11px;
+      padding: 3px 3px 3px 7px !important;
+      color: #000; }
+    .login-header .login-content .txt-bold {
+      font-weight: bold; }
 
-/*# sourceMappingURL=home1.css.map */
+/*# sourceMappingURL=home.css.map */
